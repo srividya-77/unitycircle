@@ -50,22 +50,40 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-            <div className="glass-card p-6 rounded-2xl text-center transition-bounce hover:scale-105">
-              <Users className="h-8 w-8 mx-auto mb-3 text-primary-glow" />
-              <div className="text-3xl font-bold mb-2">50,000+</div>
-              <div className="text-white/80">Active Alumni</div>
+          {/* Achievement Stats */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="group glass-card p-8 rounded-3xl text-center transition-bounce hover:scale-110 hover:shadow-glow cursor-pointer relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-smooth"></div>
+              <div className="relative z-10">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/20 mb-4 group-hover:bg-primary/30 transition-smooth">
+                  <Users className="h-8 w-8 text-primary-glow group-hover:scale-125 transition-smooth" />
+                </div>
+                <div className="text-4xl font-bold mb-2 group-hover:text-primary-glow transition-smooth">50,000+</div>
+                <div className="text-white/80 group-hover:text-white transition-smooth font-medium">Active Alumni</div>
+                <div className="text-xs text-white/60 group-hover:text-white/80 transition-smooth mt-2">Growing daily</div>
+              </div>
             </div>
-            <div className="glass-card p-6 rounded-2xl text-center transition-bounce hover:scale-105">
-              <Trophy className="h-8 w-8 mx-auto mb-3 text-yellow-400" />
-              <div className="text-3xl font-bold mb-2">95%</div>
-              <div className="text-white/80">Success Rate</div>
+            <div className="group glass-card p-8 rounded-3xl text-center transition-bounce hover:scale-110 hover:shadow-glow cursor-pointer relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-smooth"></div>
+              <div className="relative z-10">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-yellow-400/20 mb-4 group-hover:bg-yellow-400/30 transition-smooth">
+                  <Trophy className="h-8 w-8 text-yellow-400 group-hover:scale-125 transition-smooth" />
+                </div>
+                <div className="text-4xl font-bold mb-2 group-hover:text-yellow-400 transition-smooth">95%</div>
+                <div className="text-white/80 group-hover:text-white transition-smooth font-medium">Success Rate</div>
+                <div className="text-xs text-white/60 group-hover:text-white/80 transition-smooth mt-2">Proven results</div>
+              </div>
             </div>
-            <div className="glass-card p-6 rounded-2xl text-center transition-bounce hover:scale-105">
-              <Briefcase className="h-8 w-8 mx-auto mb-3 text-secondary" />
-              <div className="text-3xl font-bold mb-2">5,000+</div>
-              <div className="text-white/80">Career Connections</div>
+            <div className="group glass-card p-8 rounded-3xl text-center transition-bounce hover:scale-110 hover:shadow-glow cursor-pointer relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-smooth"></div>
+              <div className="relative z-10">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-secondary/20 mb-4 group-hover:bg-secondary/30 transition-smooth">
+                  <Briefcase className="h-8 w-8 text-secondary group-hover:scale-125 transition-smooth" />
+                </div>
+                <div className="text-4xl font-bold mb-2 group-hover:text-secondary transition-smooth">5,000+</div>
+                <div className="text-white/80 group-hover:text-white transition-smooth font-medium">Career Connections</div>
+                <div className="text-xs text-white/60 group-hover:text-white/80 transition-smooth mt-2">Made monthly</div>
+              </div>
             </div>
           </div>
         </div>

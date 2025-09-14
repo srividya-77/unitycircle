@@ -22,37 +22,47 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border shadow-card">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-xl border-b border-border/50 shadow-elegant">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="gradient-primary p-2 rounded-lg">
-              <GraduationCap className="h-6 w-6 text-white" />
+          <div className="flex items-center space-x-3">
+            <div className="relative">
+              <div className="gradient-primary p-3 rounded-xl shadow-elegant">
+                <GraduationCap className="h-7 w-7 text-white" />
+              </div>
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full animate-pulse"></div>
             </div>
-            <span className="text-xl font-bold text-foreground">Alumni Connect Pro</span>
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-foreground tracking-tight">Unity Circle</span>
+              <span className="text-xs text-muted-foreground font-medium">Alumni Network</span>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
-            {navItems.map((item) => (
+          <div className="hidden md:flex items-center space-x-2">
+            {navItems.map((item, index) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="flex items-center space-x-2 px-4 py-2 rounded-md text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-smooth"
+                className="group relative flex items-center space-x-2 px-5 py-3 rounded-xl text-sm font-medium text-muted-foreground hover:text-foreground transition-smooth hover:bg-accent/50"
+                style={{ animationDelay: `${index * 100}ms` }}
               >
-                <item.icon className="h-4 w-4" />
-                <span>{item.label}</span>
+                <item.icon className="h-4 w-4 transition-smooth group-hover:scale-110" />
+                <span className="relative">
+                  {item.label}
+                  <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-smooth group-hover:w-full"></div>
+                </span>
               </a>
             ))}
           </div>
 
           {/* Action Buttons */}
-          <div className="hidden md:flex items-center space-x-3">
-            <Button variant="ghost" size="sm">
+          <div className="hidden md:flex items-center space-x-4">
+            <Button variant="ghost" size="sm" className="hover:bg-accent/70 transition-smooth">
               Sign In
             </Button>
-            <Button variant="hero" size="sm">
+            <Button variant="hero" size="sm" className="shadow-elegant hover:shadow-glow transition-smooth">
               Join Network
             </Button>
           </div>
