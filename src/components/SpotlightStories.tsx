@@ -23,7 +23,7 @@ const SpotlightStories = () => {
       year: "2024",
       description: "Proud that our Alumni is the CEO of the Unicorn Company Yamaha and her inspiring journey to this position is a testament to her hard work.",
       quote: "I am happy to be one of the top 50 Female Coders in Amazon Hackathon",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b7f2?w=400&h=400&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face",
       achievements: [
         { icon: Crown, label: "CEO" },
         { icon: Rocket, label: "Entrepreneur" },

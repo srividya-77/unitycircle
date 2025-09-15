@@ -35,7 +35,6 @@ const Navigation = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold text-foreground tracking-tight">UnityCircle</span>
-              <span className="text-xs text-muted-foreground font-medium">Alumni Network</span>
             </div>
           </div>
 

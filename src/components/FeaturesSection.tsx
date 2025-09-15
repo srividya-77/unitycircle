@@ -44,9 +44,9 @@ const FeaturesSection = () => {
       color: "text-primary"
     },
     {
-      icon: Briefcase,
-      title: "Career Tracking",
-      description: "Real-time LinkedIn integration monitors career progression and opportunities.",
+      icon: Heart,
+      title: "Alumni Giving",
+      description: "Seamless donation platform that connects alumni hearts with institutional needs.",
       color: "text-secondary"
     }
   ];
