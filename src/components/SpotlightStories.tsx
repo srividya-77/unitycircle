@@ -100,51 +100,34 @@ const SpotlightStories = () => {
             >
               <CardContent className="p-0">
                 <div className="flex flex-col md:flex-row h-full">
-                  {/* Left Side - Certificate/Achievement */}
-                  <div className="w-full md:w-1/2 bg-gradient-to-br from-[#1E3A8A] to-[#1E40AF] p-6 text-white relative overflow-hidden">
-                    {/* Decorative elements */}
-                    <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#FF6B35] to-[#F59E0B]"></div>
-                    <div className="absolute bottom-0 right-0 w-full h-2 bg-gradient-to-r from-[#F59E0B] to-[#FF6B35]"></div>
+                  {/* Left Side - Achievement Icons */}
+                  <div className="w-full md:w-1/3 bg-gradient-to-br from-[#1E3A8A] to-[#1E40AF] p-6 text-white relative overflow-hidden">
+                    <div className="absolute top-0 left-0 w-full h-1 bg-[#FF6B35]"></div>
                     
-                    {/* Certificate content */}
-                    <div className="relative z-10">
-                      <div className="text-center mb-4">
-                        <div className="inline-block px-4 py-2 bg-[#FF6B35] rounded-full mb-2">
-                          <span className="text-sm font-bold">CONGRATULATIONS</span>
-                        </div>
-                        <h3 className="text-lg font-bold leading-tight">
-                          {story.achievement}
-                        </h3>
-                        <Badge variant="secondary" className="mt-2 bg-white/20 text-white border-white/30">
-                          {story.year}
-                        </Badge>
-                      </div>
-
-                      {/* Achievement badges grid */}
-                      <div className="grid grid-cols-3 gap-2 mt-4">
-                        {story.achievements.map((achievement, index) => (
+                    <div className="relative z-10 text-center">
+                      <h3 className="text-sm font-bold mb-3 text-[#FF6B35]">
+                        {story.year} ACHIEVEMENT
+                      </h3>
+                      
+                      <div className="grid grid-cols-3 gap-3">
+                        {story.achievements.slice(0, 6).map((achievement, index) => (
                           <div 
                             key={index}
-                            className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-2 flex flex-col items-center justify-center hover:bg-[#FF6B35]/20 transition-colors duration-200"
+                            className="bg-white/10 rounded-lg p-3 flex flex-col items-center justify-center hover:bg-[#FF6B35]/20 transition-colors duration-200"
                           >
-                            <achievement.icon className="w-4 h-4 mb-1" />
-                            <span className="text-xs font-medium text-center leading-tight">
-                              {achievement.label}
-                            </span>
+                            <achievement.icon className="w-5 h-5" />
                           </div>
                         ))}
                       </div>
+                      
+                      <div className="mt-4 pt-3 border-t border-white/20">
+                        <span className="text-xs font-medium">{story.achievement}</span>
+                      </div>
                     </div>
-
-                    {/* Decorative corner elements */}
-                    <div className="absolute top-2 left-2 w-6 h-6 border-l-2 border-t-2 border-[#FF6B35]"></div>
-                    <div className="absolute top-2 right-2 w-6 h-6 border-r-2 border-t-2 border-[#FF6B35]"></div>
-                    <div className="absolute bottom-2 left-2 w-6 h-6 border-l-2 border-b-2 border-[#FF6B35]"></div>
-                    <div className="absolute bottom-2 right-2 w-6 h-6 border-r-2 border-b-2 border-[#FF6B35]"></div>
                   </div>
 
                   {/* Right Side - Alumni Profile */}
-                  <div className="w-full md:w-1/2 p-6 flex flex-col justify-between bg-card">
+                  <div className="w-full md:w-2/3 p-6 flex flex-col justify-between bg-card">
                     <div>
                       {/* Profile image */}
                       <div className="flex justify-center mb-4">

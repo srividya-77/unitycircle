@@ -34,7 +34,7 @@ const Navigation = () => {
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full animate-pulse"></div>
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-foreground tracking-tight">Unity Circle</span>
+              <span className="text-xl font-bold text-foreground tracking-tight">UnityCircle</span>
               <span className="text-xs text-muted-foreground font-medium">Alumni Network</span>
             </div>
           </div>
