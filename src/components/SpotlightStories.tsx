@@ -81,102 +81,102 @@ const SpotlightStories = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-background to-background/80">
+    <section className="py-12 px-4 bg-gradient-to-br from-background to-background/80">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground">
             SPOTLIGHT STORIES
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Celebrating our outstanding alumni who are making remarkable contributions across industries and inspiring the next generation of leaders.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {stories.map((story) => (
             <Card 
               key={story.id}
-              className="group overflow-hidden bg-card border-border hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105 hover:rotate-1 cursor-pointer"
+              className="group overflow-hidden bg-card border border-border/60 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 hover:scale-[1.02] cursor-pointer"
             >
-              <CardContent className="p-0">
-                <div className="flex flex-col md:flex-row h-full">
-                  {/* Left Side - Achievement Icons */}
-                  <div className="w-full md:w-1/3 bg-gradient-to-br from-[#1E3A8A] to-[#1E40AF] p-6 text-white relative overflow-hidden">
-                    <div className="absolute top-0 left-0 w-full h-1 bg-[#FF6B35]"></div>
+              <CardContent className="p-4">
+                <div className="flex flex-col h-full">
+                  {/* Header with Icons */}
+                  <div className="bg-gradient-to-br from-[#1E3A8A] to-[#1E40AF] p-3 text-white relative overflow-hidden rounded-md mb-3">
+                    <div className="absolute top-0 left-0 w-full h-0.5 bg-[#FF6B35]"></div>
                     
                     <div className="relative z-10 text-center">
-                      <h3 className="text-sm font-bold mb-3 text-[#FF6B35]">
+                      <h3 className="text-xs font-bold mb-2 text-[#FF6B35]">
                         {story.year} ACHIEVEMENT
                       </h3>
                       
-                      <div className="grid grid-cols-3 gap-3">
+                      <div className="grid grid-cols-3 gap-2">
                         {story.achievements.slice(0, 6).map((achievement, index) => (
                           <div 
                             key={index}
-                            className="bg-white/10 rounded-lg p-3 flex flex-col items-center justify-center hover:bg-[#FF6B35]/20 transition-colors duration-200"
+                            className="bg-white/10 rounded-md p-2 flex flex-col items-center justify-center hover:bg-[#FF6B35]/20 transition-colors duration-200"
                           >
-                            <achievement.icon className="w-5 h-5" />
+                            <achievement.icon className="w-4 h-4" />
                           </div>
                         ))}
                       </div>
                       
-                      <div className="mt-4 pt-3 border-t border-white/20">
+                      <div className="mt-2 pt-2 border-t border-white/20">
                         <span className="text-xs font-medium">{story.achievement}</span>
                       </div>
                     </div>
                   </div>
 
-                  {/* Right Side - Alumni Profile */}
-                  <div className="w-full md:w-2/3 p-6 flex flex-col justify-between bg-card">
+                  {/* Profile Content */}
+                  <div className="flex-1 flex flex-col justify-between">
                     <div>
                       {/* Profile image */}
-                      <div className="flex justify-center mb-4">
+                      <div className="flex justify-center mb-3">
                         <div className="relative">
                           <img
                             src={story.image}
                             alt={story.name}
-                            className="w-20 h-20 rounded-full object-cover border-4 border-[#FF6B35] group-hover:scale-110 transition-transform duration-300"
+                            className="w-16 h-16 rounded-full object-cover border-3 border-[#FF6B35] group-hover:scale-105 transition-transform duration-300"
                           />
-                          <div className="absolute -top-1 -right-1 w-6 h-6 bg-[#FF6B35] rounded-full flex items-center justify-center">
-                            <Star className="w-3 h-3 text-white" />
+                          <div className="absolute -top-1 -right-1 w-5 h-5 bg-[#FF6B35] rounded-full flex items-center justify-center">
+                            <Star className="w-2.5 h-2.5 text-white" />
                           </div>
                         </div>
                       </div>
 
                       {/* Profile info */}
-                      <div className="text-center mb-4">
-                        <h4 className="text-lg font-bold text-foreground mb-1">
+                      <div className="text-center mb-3">
+                        <h4 className="text-base font-bold text-foreground mb-1 leading-tight">
                           {story.name}
                         </h4>
-                        <p className="text-sm font-medium text-[#FF6B35] mb-2">
+                        <p className="text-sm font-semibold text-[#FF6B35] mb-2 leading-tight">
                           {story.position}
                         </p>
                       </div>
 
                       {/* Description */}
-                      <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                      <p className="text-xs text-muted-foreground leading-relaxed mb-3 line-clamp-3">
                         {story.description}
                       </p>
 
                       {/* Quote */}
-                      <blockquote className="text-xs italic text-muted-foreground border-l-2 border-[#FF6B35] pl-3 mb-4">
+                      <blockquote className="text-xs italic text-muted-foreground border-l-2 border-[#FF6B35] pl-2 mb-3 line-clamp-2">
                         "{story.quote}"
                       </blockquote>
                     </div>
 
                     {/* Action buttons */}
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-1.5">
                       <Button 
                         variant="outline" 
                         size="sm" 
-                        className="w-full border-[#FF6B35] text-[#FF6B35] hover:bg-[#FF6B35] hover:text-white transition-colors duration-200"
+                        className="w-full h-8 text-xs border-[#FF6B35] text-[#FF6B35] hover:bg-[#FF6B35] hover:text-white transition-colors duration-200"
                       >
                         Read Full Story
                       </Button>
                       <Button 
                         variant="ghost" 
                         size="sm" 
-                        className="w-full text-[#1E3A8A] hover:bg-[#1E3A8A]/10 transition-colors duration-200"
+                        className="w-full h-8 text-xs text-[#1E3A8A] hover:bg-[#1E3A8A]/10 transition-colors duration-200"
                       >
                         Listen to Podcast
                       </Button>
@@ -189,11 +189,11 @@ const SpotlightStories = () => {
         </div>
 
         {/* Call to action */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-8">
           <Button 
             variant="default" 
             size="lg" 
-            className="bg-gradient-to-r from-[#FF6B35] to-[#F59E0B] hover:from-[#E55A2B] hover:to-[#D97706] text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-gradient-to-r from-[#FF6B35] to-[#F59E0B] hover:from-[#E55A2B] hover:to-[#D97706] text-white px-6 py-2 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-300"
           >
             Explore More Success Stories
           </Button>
