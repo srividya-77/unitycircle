@@ -28,9 +28,11 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <div className="relative">
-              <div className="gradient-primary p-3 rounded-xl shadow-elegant">
-                <GraduationCap className="h-7 w-7 text-white" />
-              </div>
+              <img 
+                src="/src/assets/unitycircle-logo.jpg" 
+                alt="UnityCircle Logo" 
+                className="h-12 w-12 rounded-xl shadow-elegant object-cover"
+              />
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full animate-pulse"></div>
             </div>
             <div className="flex flex-col">

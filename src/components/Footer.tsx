@@ -90,8 +90,8 @@ const Footer = () => {
                 <GraduationCap className="h-8 w-8 text-white" />
               </div>
               <div>
-                <h2 className="text-2xl font-bold">Alumni Connect Pro</h2>
-                <p className="text-white/60 text-sm">Punjab Higher Education</p>
+                <h2 className="text-2xl font-bold">UnityCircle</h2>
+                <p className="text-white/60 text-sm">Hyderabad Higher Education</p>
               </div>
             </div>
             <p className="text-white/80 mb-6 leading-relaxed">
@@ -103,15 +103,15 @@ const Footer = () => {
             <div className="space-y-3 mb-6">
               <div className="flex items-center space-x-3 text-sm text-white/80">
                 <Mail className="h-4 w-4" />
-                <span>connect@alumniconnectpro.edu</span>
+                <span>connect@unitycircle.edu</span>
               </div>
               <div className="flex items-center space-x-3 text-sm text-white/80">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 (040) 123-4567</span>
               </div>
               <div className="flex items-center space-x-3 text-sm text-white/80">
                 <MapPin className="h-4 w-4" />
-                <span>Punjab, India</span>
+                <span>Hyderabad, India</span>
               </div>
             </div>
 
@@ -158,14 +158,14 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-white/60">
             <div>
-              <p>&copy; 2024 Alumni Connect Pro. All rights reserved.</p>
+              <p>&copy; 2024 UnityCircle. All rights reserved.</p>
             </div>
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
               <span>Problem ID: 25017</span>
               <span>|</span>
               <span>Smart Education Initiative</span>
               <span>|</span>
-              <span>Punjab Higher Education Department</span>
+              <span>Hyderabad Higher Education Department</span>
             </div>
           </div>
         </div>
