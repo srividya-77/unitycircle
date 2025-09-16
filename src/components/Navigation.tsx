@@ -31,7 +31,7 @@ const Navigation = () => {
               <img 
                 src="/src/assets/unitycircle-logo.jpg" 
                 alt="UnityCircle Logo" 
-                className="h-12 w-12 rounded-xl shadow-elegant object-cover"
+                className="h-12 w-12 rounded-xl shadow-elegant object-contain"
               />
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full animate-pulse"></div>
             </div>
