@@ -26,18 +26,8 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="relative">
-              <img 
-                src="/src/assets/unitycircle-logo.jpg" 
-                alt="UnityCircle Logo" 
-                className="h-12 w-12 rounded-xl shadow-elegant object-contain"
-              />
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full animate-pulse"></div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-foreground tracking-tight">UnityCircle</span>
-            </div>
+          <div className="flex items-center">
+            <span className="text-xl font-bold text-foreground tracking-tight">UnityCircle</span>
           </div>
 
           {/* Desktop Navigation */}
