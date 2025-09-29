@@ -6,6 +6,7 @@ import AlumniDirectory from "@/components/AlumniDirectory";
 import EventsSection from "@/components/EventsSection";
 import MentorshipHub from "@/components/MentorshipHub";
 import JobsBoard from "@/components/JobsBoard";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import DonationPortal from "@/components/DonationPortal";
 import Footer from "@/components/Footer";
 
@@ -20,6 +21,7 @@ const Index = () => {
       <EventsSection />
       <MentorshipHub />
       <JobsBoard />
+      <TestimonialsSection />
       <DonationPortal />
       <Footer />
     </div>
