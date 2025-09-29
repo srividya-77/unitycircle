@@ -9,6 +9,7 @@ import JobsBoard from "@/components/JobsBoard";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import DonationPortal from "@/components/DonationPortal";
 import Footer from "@/components/Footer";
+import FloatingElements from "@/components/FloatingElements";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
       <TestimonialsSection />
       <DonationPortal />
       <Footer />
+      <FloatingElements />
     </div>
   );
 };
