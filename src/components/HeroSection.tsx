@@ -35,8 +35,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed">
-            The next-generation platform that transforms how educational institutions 
-            connect with their graduates through AI-powered matching and engagement.
+            The only platform that unites <span className="font-semibold text-yellow-400">students, alumni, recruiters, and college management</span> in one comprehensive ecosystem for career growth and institutional excellence.
           </p>
 
           {/* CTA Buttons */}
@@ -58,9 +57,9 @@ const HeroSection = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/20 mb-4 group-hover:bg-primary/30 transition-smooth">
                   <Users className="h-8 w-8 text-primary-glow group-hover:scale-125 transition-smooth" />
                 </div>
-                <div className="text-4xl font-bold mb-2 group-hover:text-primary-glow transition-smooth">50,000+</div>
-                <div className="text-white/80 group-hover:text-white transition-smooth font-medium">Active Alumni</div>
-                <div className="text-xs text-white/60 group-hover:text-white/80 transition-smooth mt-2">Growing daily</div>
+                <div className="text-4xl font-bold mb-2 group-hover:text-primary-glow transition-smooth">4</div>
+                <div className="text-white/80 group-hover:text-white transition-smooth font-medium">User Groups United</div>
+                <div className="text-xs text-white/60 group-hover:text-white/80 transition-smooth mt-2">Students • Alumni • Recruiters • Management</div>
               </div>
             </div>
             <div className="group glass-card p-8 rounded-3xl text-center transition-bounce hover:scale-110 hover:shadow-glow cursor-pointer relative overflow-hidden">

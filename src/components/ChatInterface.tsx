@@ -12,12 +12,12 @@ interface ChatInterfaceProps {
 
 const ChatInterface = ({ isOpen, onClose }: ChatInterfaceProps) => {
   const [messages, setMessages] = useState([
-    {
-      id: 1,
-      text: "Hello! I am UnityCircle Assistant. How can I help you today?",
-      isBot: true,
-      timestamp: new Date(),
-    },
+        {
+          id: 1,
+          text: "Hello! I am UnityCircle Assistant. I help students, alumni, recruiters, and college management navigate our comprehensive platform. How can I assist you today?",
+          isBot: true,
+          timestamp: new Date(),
+        },
   ]);
   const [inputMessage, setInputMessage] = useState("");
 

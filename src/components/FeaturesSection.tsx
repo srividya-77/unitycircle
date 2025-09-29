@@ -33,14 +33,14 @@ const FeaturesSection = () => {
     },
     {
       icon: Users,
-      title: "Smart Communities",
-      description: "Join topic-based groups by batch, industry, location, and shared interests.",
+      title: "Multi-Stakeholder Network",
+      description: "Students, alumni, recruiters, and college management collaborate seamlessly in purpose-built spaces.",
       color: "text-success"
     },
     {
-      icon: Calendar,
-      title: "Virtual Events",
-      description: "Built-in video conferencing, VR meetups, and seamless calendar integration.",
+      icon: Briefcase,
+      title: "Unified Recruitment Hub",
+      description: "Recruiters access verified student profiles while college management tracks placement success.",
       color: "text-primary"
     },
     {
@@ -61,11 +61,10 @@ const FeaturesSection = () => {
             <span className="text-sm font-medium text-primary">Smart Features</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            What Makes Us Different
+            Four Communities, One Platform
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Cutting-edge technology meets human connection to create the most advanced 
-            alumni platform ever built.
+            The first platform designed to connect <span className="font-semibold text-primary">students seeking guidance</span>, <span className="font-semibold text-secondary">alumni sharing expertise</span>, <span className="font-semibold text-accent">recruiters finding talent</span>, and <span className="font-semibold text-success">college management driving growth</span> - all in one unified ecosystem.
           </p>
         </div>
 
