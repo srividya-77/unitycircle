@@ -1,25 +1,30 @@
+import { useState } from "react";
 import { MessageCircle, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ChatInterface from "@/components/ChatInterface";
 
 const FloatingElements = () => {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+
+  const toggleChat = () => {
+    setIsChatOpen(!isChatOpen);
+  };
+
   return (
     <>
       {/* AI Chatbot - Right Bottom Corner */}
-      <div className="fixed bottom-6 right-6 z-50">
+      <div className="fixed bottom-6 right-6 z-40">
         <Button
           size="lg"
           className="h-14 w-14 rounded-full shadow-elegant hover:shadow-glow bg-primary hover:bg-primary/90 transition-all duration-300 hover:scale-110"
-          onClick={() => {
-            // Add chatbot functionality here
-            console.log("Opening AI Chatbot...");
-          }}
+          onClick={toggleChat}
         >
           <MessageCircle className="h-6 w-6 text-primary-foreground" />
         </Button>
       </div>
 
       {/* Demo Icon - Left Bottom Corner */}
-      <div className="fixed bottom-6 left-6 z-50">
+      <div className="fixed bottom-6 left-6 z-40">
         <Button
           size="lg"
           variant="outline"
@@ -32,6 +37,9 @@ const FloatingElements = () => {
           <Play className="h-6 w-6 text-primary fill-primary" />
         </Button>
       </div>
+
+      {/* Chat Interface */}
+      <ChatInterface isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />
     </>
   );
 };
